@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>二重スリット実験 | Quantum Lab</title><meta name="description" content="粒子を1個ずつ撃って、観測の有無で干渉縞が消えるのを確かめるシミュレーター。"><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><a class="name" href="../index.html">Quantum Lab</a><nav><a href="../index.html#works">作品</a><a href="../index.html#articles">記事</a></nav></header>
+<main>
+<h1>二重スリット実験</h1>
+<p class="lead">粒子は1個ずつ飛び、スクリーンに点が落ちます。数が増えると縞が現れます。「観測」をONにすると、経路が分かって縞が消えます。解説は<a href="../articles/double-slit.html">こちら</a>。</p>
+<canvas id="c" width="720" height="420" aria-label="二重スリット実験のシミュレーション"></canvas>
+<div class="row">
+  <button id="obs" class="off">観測: OFF</button>
+  <button id="reset">リセット</button>
+  <label>スリット間隔 <input id="d" type="range" min="2" max="10" step="0.1" value="5"></label>
+  <label>波長 <input id="w" type="range" min="0.5" max="2" step="0.05" value="1"></label>
+  <label>速度 <input id="r" type="range" min="1" max="60" value="8"></label>
+  <span>粒子数: <b id="count">0</b></span>
+</div>
+</main>
+<footer class="site">Quantum Lab / 量子の見方を、手を動かして学ぶ実験室。シミュレーションは学習用の簡易モデルです。</footer><script src="double-slit.js"></script></body></html>
